@@ -1,9 +1,9 @@
 import './MovieCard.css'
 
-export default function MovieCard() {
-
+export default function MovieCard({film}) {
+    console.log(film)
 
     return (
-        <p>moviecard</p>
+        <p>{film.Title}</p>
     )
 }

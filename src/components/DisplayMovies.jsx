@@ -1,9 +1,24 @@
+import {useEffect} from 'react'
 import MovieCard from './MovieCard'
 
-export default function DisplayMovies() {
+export default function DisplayMovies({films}) {
+        // console.log(films)
+
+    let movieList = ""
+    
+        if(films.Response === "True") {
+            movieList = films.Search.map(film => {
+                return (
+                    <MovieCard film={film} key={film.imdbID} />
+                )
+            })
+        } else if(films.Response === "False") {
+            movieList = <p>{films.Error}</p>
+        }
+    // }, [])
 
 
     return (
-        <p>moviecard</p>
+        movieList
     )
 }
