@@ -1,0 +1,29 @@
+.search-part {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.search-part input {
+    font-size: inherit;
+    padding: .2rem .4rem;
+    background-color: #C9CCD5;
+    border: 2px solid black;
+}
+.search-part input:focus {
+    outline: none;
+    box-shadow: 0 0 1px 1px black
+}
+
+.search-part button {
+    font-size: inherit;
+    margin-left: 1rem;
+    padding: .2rem .4rem;
+    background-color: #C9CCD5;
+
+}
+.footer {
+    margin-top: auto;
+    align-self: stretch;
+    text-align: center;
+    background-color: #C9CCD5;
+}
